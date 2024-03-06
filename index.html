@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live Crypto</title>
+</head>
+
+<body>
+  <div id="app">
+    <button id="connect" disabled>Connect</button>
+    <div style="margin-bottom: 0.5rem;">
+      <div>Connection Status:</div>
+      <div id="status">
+        <span>Disconnected</span>
+        <div class="status-circle"></div>
+      </div>
+    </div>
+    <div>
+      <div>Latest Message:</div>
+      <div id="message"></div>
+    </div>
+    <!-- plotly.js plot for btc to usd -->
+    <div>
+      <canvas id="btc-chart"></canvas>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
